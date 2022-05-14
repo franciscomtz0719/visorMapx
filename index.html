@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>
+            <button class="btn offcanvas__generic-button d-inline-flex justify-content-start" type="button" data-bs-toggle="collapse" data-bs-target="#projectCollapse" aria-expanded="false" aria-controls="projectCollapse">
+              <div class="d-inline-flex justify-content-start">
+                  <img class="offcanvas__icon offcanvas__icon-color" src="./assets/icons/projects-icon.svg" alt="">
+                  <div>Proyectos</div>
+              </div>
+            </button>
+          </p>
+          <div class="collapse" id="projectCollapse">
+            <div class="card card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">Tank Farm</li>
+                    <li class="list-group-item">Torre Enfriamiento HPDC</li>
+                    <li class="list-group-item">RoboVent</li>
+                    <li class="list-group-item">Subestacion Magna</li>
+                  </ul>
+            </div>
+          </div>
+            <ul class="list-group">
+                <li class="list-group-item m-0 ps-1">
+                  <img class="offcanvas__icon" src="./assets/icons/chart-line-solid.svg" alt="">
+                  <a href="">Graficas en tiempo real</a>
+                </li>
+                <li class="list-group-item m-0 ps-1">
+                  <img class="offcanvas__icon" src="./assets/icons/gears-solid.svg" alt="">
+                  <a href="">Configuración</a>
+                </li>
+                <li class="list-group-item m-0 ps-1">
+                  <img class="offcanvas__icon" src="./assets/icons/sheet-plastic-solid.svg" alt="">
+                  <a href="">Generar reporte</a>
+                </li>
+              </ul>
+
+              <p>
+                <button class="btn offcanvas__generic-button d-inline-flex justify-content-start " type="button" data-bs-toggle="collapse" data-bs-target="#collapseReports" aria-expanded="false" aria-controls="collapseReports">
+                  <div class="d-inline-flex justify-content-start">
+                    <img class="offcanvas__icon" src="./assets/icons/box-archive-solid.svg" alt="">
+                    <div>Reportes guardados</div>
+                </div>
+                </button>
+              </p>
+              <div class="collapse" id="collapseReports">
+                <div class="card card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="">Reporte presiones 28/02/22</a></li>
+                        <li class="list-group-item"><a href="">Reporte alarmas 15/03/22</a></li>
+                        <li class="list-group-item"><a href="">Reporte estadistico 02/05/22</a></li>
+                      </ul>
+                </div>
+              </div>
+        </div>
+      </div>
+
+    <nav>
+        <div class="px-3 py-2 bg-dark text-white">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img src="/assets/icons/hambuerger.svg" alt=""></button>
+                <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                  <img src="./assets/icons/visormapx.svg" width="200rem" alt="">
+                </a>
+                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                  <li>
+                    <a href="#" class="nav-link text-secondary">
+                        <img src="./assets/icons/home.svg" class="bi d-block mx-auto mb-1" alt="">
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <img src="./assets/icons/dashboard.svg" class="bi d-block mx-auto mb-1" alt="">
+                      Dashboard
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <img src="./assets/icons/calendar.svg" class="bi d-block mx-auto mb-1" alt="">
+                      Calendario
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <img src="./assets/icons/apps.svg" class="bi d-block mx-auto mb-1" alt="">
+                      Apps
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <img src="./assets/icons/bell-solid.svg" class="bi d-block mx-auto mb-1" width="22px" alt="">
+                      Notificaciones
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <img src="./assets/icons/user.svg" class="bi d-block mx-auto mb-1" alt="">
+                      Usuario
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </nav>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card m-3 card-info card__size">
+                      <div class="card__box d-flex justify-content-center">
+                        <img src="./assets/Logos/flogoSoporte.png" class="card-info__logo" alt="...">
+                      </div>
+                        <div class="card-body">
+                          <h5 class="card-title">GRUPO FLOGO</h5>
+                          <p class="card-text">Usuario: Francisco Manuel Martínez Ibarra</p>
+                          <p class="card-text">Correo: francisco.martinez@grupoflogo.com</p>
+                          <p class="card-text"><small class="text-muted">-Último acceso hace 1 día</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-sm-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12">
+                          <div class="card m-3 card-info card__size">
+                            <div class="card__box d-flex justify-content-center">
+                              <img src="./assets/Logos/tick-ok.png" class="card-info__logo" alt="...">
+                            </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Tankfarm</h5>
+                                <p class="card-text">Status actual: Ok</p>
+                                <p class="card-text">Advertencias: 0</p>
+                                <p class="card-text">Fallas: 0</p>
+                                <p class="card-text"><small class="text-muted">-Última advertencia: 13/05/02 14:12:50 </small></p>
+                              </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12">
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>

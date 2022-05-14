@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.card{
+
+    &__size{
+        height: 100%;
+    }
+}
+
+.card-info{
+
+
+    &__logo{
+        width: 8rem;
+        height: auto;
+    }
+}
+
+.offcanvas{
+    &__icon{
+        width: 24px;
+        margin-right: 1rem;
+    }
+
+    &__icon-color{
+        filter: black;
+    }
+
+    &__generic-button{
+        width: 100%;
+        background: rgb(0,110,154);
+        background: linear-gradient(90deg, rgba(0,110,154,1) 0%, rgba(52,52,139,1) 50%, rgba(0,212,255,1) 100%);
+    }
+
+    a{
+        text-decoration: none;
+    }
+}

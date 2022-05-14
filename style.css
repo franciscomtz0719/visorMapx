@@ -1,0 +1,35 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card__size {
+  height: 100%;
+}
+
+.card-info__logo {
+  width: 8rem;
+  height: auto;
+}
+
+.offcanvas__icon {
+  width: 24px;
+  margin-right: 1rem;
+}
+
+.offcanvas__icon-color {
+  -webkit-filter: black;
+          filter: black;
+}
+
+.offcanvas__generic-button {
+  width: 100%;
+  background: #006e9a;
+  background: -webkit-gradient(linear, left top, right top, from(#006e9a), color-stop(50%, #34348b), to(#00d4ff));
+  background: linear-gradient(90deg, #006e9a 0%, #34348b 50%, #00d4ff 100%);
+}
+
+.offcanvas a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
