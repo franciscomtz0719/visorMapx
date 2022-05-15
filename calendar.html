@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>
+            <button class="btn offcanvas__generic-button d-inline-flex justify-content-start" type="button" data-bs-toggle="collapse" data-bs-target="#projectCollapse" aria-expanded="false" aria-controls="projectCollapse">
+              <div class="d-inline-flex justify-content-start">
+                  <img class="offcanvas__icon offcanvas__icon-color" src="./assets/icons/projects-icon.svg" alt="">
+                  <div>Proyectos</div>
+              </div>
+            </button>
+          </p>
+          <div class="collapse" id="projectCollapse">
+            <div class="card card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">Tank Farm</li>
+                    <li class="list-group-item">Torre Enfriamiento HPDC</li>
+                    <li class="list-group-item">RoboVent</li>
+                    <li class="list-group-item">Subestacion Magna</li>
+                  </ul>
+            </div>
+          </div>
+            <ul class="list-group">
+                <li class="list-group-item m-0 ps-1">
+                  <img class="offcanvas__icon" src="./assets/icons/chart-line-solid.svg" alt="">
+                  <a href="">Graficas en tiempo real</a>
+                </li>
+                <li class="list-group-item m-0 ps-1">
+                  <img class="offcanvas__icon" src="./assets/icons/gears-solid.svg" alt="">
+                  <a href="">Configuración</a>
+                </li>
+                <li class="list-group-item m-0 ps-1">
+                  <img class="offcanvas__icon" src="./assets/icons/sheet-plastic-solid.svg" alt="">
+                  <a href="">Generar reporte</a>
+                </li>
+              </ul>
+
+              <p>
+                <button class="btn offcanvas__generic-button d-inline-flex justify-content-start " type="button" data-bs-toggle="collapse" data-bs-target="#collapseReports" aria-expanded="false" aria-controls="collapseReports">
+                  <div class="d-inline-flex justify-content-start">
+                    <img class="offcanvas__icon" src="./assets/icons/box-archive-solid.svg" alt="">
+                    <div>Reportes guardados</div>
+                </div>
+                </button>
+              </p>
+              <div class="collapse" id="collapseReports">
+                <div class="card card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="">Reporte presiones 28/02/22</a></li>
+                        <li class="list-group-item"><a href="">Reporte alarmas 15/03/22</a></li>
+                        <li class="list-group-item"><a href="">Reporte estadistico 02/05/22</a></li>
+                      </ul>
+                </div>
+              </div>
+        </div>
+      </div>
+
+    <nav>
+        <div class="px-3 py-2 bg-dark text-white">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img src="/assets/icons/hambuerger.svg" alt=""></button>
+                <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                  <img src="./assets/icons/visormapx.svg" width="200rem" alt="">
+                </a>
+                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                  <li>
+                    <a href="./index.html" class="nav-link text-secondary">
+                        <img src="./assets/icons/home.svg" class="bi d-block mx-auto mb-1" alt="">
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <img src="./assets/icons/dashboard.svg" class="bi d-block mx-auto mb-1" alt="">
+                      Dashboard
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <img src="./assets/icons/calendar.svg" class="bi d-block mx-auto mb-1" alt="">
+                      Calendario
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <img src="./assets/icons/apps.svg" class="bi d-block mx-auto mb-1" alt="">
+                      Apps
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <img src="./assets/icons/bell-solid.svg" class="bi d-block mx-auto mb-1" width="22px" alt="">
+                      Notificaciones
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <img src="./assets/icons/user.svg" class="bi d-block mx-auto mb-1" alt="">
+                      Usuario
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </nav>
+<main>
+
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-lg-6 col-sm-12 d-inline-flex justify-content-center">
+
+                <div class="calendar">
+                    <div class="calendar__opts">
+                      <select name="calendar__month" id="calendar__month">
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>Mar</option>
+                        <option>Apr</option>
+                        <option selected>May</option>
+                        <option>Jun</option>
+                        <option>Jul</option>
+                        <option>Aug</option>
+                        <option>Sep</option>
+                        <option>Oct</option>
+                        <option>Nov</option>
+                        <option>Dec</option>
+                      </select>
+                  
+                      <select name="calendar__year" id="calendar__year">
+                        <option>2019</option>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option selected>2022</option>
+                      </select>
+                    </div>
+                  
+                    <div class="calendar__body">
+                      <div class="calendar__days">
+                        <div>M</div>
+                        <div>T</div>
+                        <div>W</div>
+                        <div>T</div>
+                        <div>F</div>
+                        <div>S</div>
+                        <div>S</div>
+                      </div>
+                  
+                      <div class="calendar__dates">
+                        <div class="calendar__date calendar__date--grey"><span>27</span></div>
+                        <div class="calendar__date calendar__date--grey"><span>28</span></div>
+                        <div class="calendar__date calendar__date--grey"><span>29</span></div>
+                        <div class="calendar__date calendar__date--grey"><span>30</span></div>
+                        <div class="calendar__date"><span>1</span></div>
+                        <div class="calendar__date"><span>2</span></div>
+                        <div class="calendar__date"><span>3</span></div>
+                        <div class="calendar__date"><span>4</span></div>
+                        <div class="calendar__date"><span>5</span></div>
+                        <div class="calendar__date"><span>6</span></div>
+                        <div class="calendar__date"><span>7</span></div>
+                        <div class="calendar__date"><span>8</span></div>
+                        <div class="calendar__date"><span>9</span></div>
+                        <div class="calendar__date"><span>10</span></div>
+                        <div class="calendar__date"><span>11</span></div>
+                        <div class="calendar__date"><span>12</span></div>
+                        <div class="calendar__date"><span>13</span></div>
+                        <div class="calendar__date"><span>14</span></div>
+                        <div class="calendar__date"><span>15</span></div>
+                        <div class="calendar__date calendar__date--selected calendar__date--first-date calendar__date--range-start"><span>16</span></div>
+                        <div class="calendar__date calendar__date--selected calendar__date--last-date"><span>17</span></div>
+                        <div class="calendar__date calendar__date--selected calendar__date--first-date"><span>18</span></div>
+                        <div class="calendar__date calendar__date--selected"><span>19</span></div>
+                        <div class="calendar__date calendar__date--selected"><span>20</span></div>
+                        <div class="calendar__date calendar__date--selected calendar__date--last-date calendar__date--range-end"><span>21</span></div>
+                        <div class="calendar__date"><span>22</span></div>
+                        <div class="calendar__date"><span>23</span></div>
+                        <div class="calendar__date"><span>24</span></div>
+                        <div class="calendar__date"><span>25</span></div>
+                        <div class="calendar__date"><span>26</span></div>
+                        <div class="calendar__date"><span>27</span></div>
+                        <div class="calendar__date"><span>28</span></div>
+                        <div class="calendar__date"><span>29</span></div>
+                        <div class="calendar__date"><span>30</span></div>
+                        <div class="calendar__date"><span>31</span></div>
+                      </div>
+                    </div>
+                  
+                    <div class="calendar__buttons">
+                      <button class="calendar__button calendar__button--primary">Agregar comentario</button>
+                  
+                      <button class="calendar__button calendar__button--grey">Guardar</button>
+                    </div>
+                  </div>
+
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <p class="table__tittle">Información especifica por día</p> <!--specific day table-->
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>
+                                #
+                            </th>
+                            <th>
+                                Hora
+                            </th>
+                            <th>
+                                Evento
+                            </th>
+                            <th>
+                                Status
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-danger">
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                14:20:30
+                            </td>
+                            <td>
+                                Presión baja
+                            </td>
+                            <td>
+                                Resuelto
+                            </td>
+                        </tr>
+                        <tr class="table-danger">
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                15:03:10
+                            </td>
+                            <td>
+                                Presión baja
+                            </td>
+                            <td>
+                                Resuelto
+                            </td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td>
+                                3
+                            </td>
+                            <td>
+                                16:55:40
+                            </td>
+                            <td>
+                                Presión cerca de limite inferior
+                            </td>
+                            <td>
+                                Revisión realizada
+                            </td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td>
+                                4
+                            </td>
+                            <td>
+                                17:05:50
+                            </td>
+                            <td>
+                                Presión cerca del limite inferior
+                            </td>
+                            <td>
+                                Revisión realizada
+                            </td>
+                        </tr>
+                        <tr class="table-danger">
+                            <td>
+                                5
+                            </td>
+                            <td>
+                                17:55:50
+                            </td>
+                            <td>
+                                Presión baja
+                            </td>
+                            <td>
+                                Resuelto
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="table__tittle">Información general por día</p> <!--specific day table-->
+                <table class="table table-striped table-sm">
+                    <thead>
+                        <tr>
+                            <th>
+                                Dia
+                            </th>
+                            <th>
+                                Numero de alertas
+                            </th>
+                            <th>
+                                Numero de alertas resueltas
+                            </th>
+                            <th>
+                                Tiempo de sistema alertado
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-success">
+                            <td>
+                                01/04/2022
+                            </td>
+                            <td>
+                                5
+                            </td>
+                            <td>
+                                5
+                            </td>
+                            <td>
+                                01:05:25
+                            </td>
+                        </tr>
+                        <tr class="table-success">
+                            <td>
+                                02/04/22
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                00:00:00
+                            </td>
+                        </tr>
+                        <tr class="table-success">
+                            <td>
+                                03/04/22
+                            </td>
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                00:25:11
+                            </td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td>
+                                04/04/22
+                            </td>
+                            <td>
+                                12
+                            </td>
+                            <td>
+                                10
+                            </td>
+                            <td>
+                                02:41:56
+                            </td>
+                        </tr>
+                        <tr class="table-danger">
+                            <td>
+                                05/04/22
+                            </td>
+                            <td>
+                                21
+                            </td>
+                            <td>
+                                6
+                            </td>
+                            <td>
+                                04:55:07
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script> 
+</body>
+</html>
