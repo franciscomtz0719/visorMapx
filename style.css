@@ -7,6 +7,22 @@
   height: 100%;
 }
 
+.card__tank-farm {
+  background-color: #b1f8cdc2;
+}
+
+.card__cooling-tower {
+  background-color: #ebf672c2;
+}
+
+.card__subestacion {
+  background-color: #b1f8cdc2;
+}
+
+.card__robovent {
+  background-color: #fc6363ac;
+}
+
 .card-info__logo {
   width: 8rem;
   height: auto;
