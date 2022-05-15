@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./charts.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>
+            <button class="btn offcanvas__generic-button d-inline-flex justify-content-start" type="button" data-bs-toggle="collapse" data-bs-target="#projectCollapse" aria-expanded="false" aria-controls="projectCollapse">
+              <div class="d-inline-flex justify-content-start">
+                  <img class="offcanvas__icon offcanvas__icon-color" src="./assets/icons/projects-icon.svg" alt="">
+                  <div>Proyectos</div>
+              </div>
+            </button>
+          </p>
+          <div class="collapse" id="projectCollapse">
+            <div class="card card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">Tank Farm</li>
+                    <li class="list-group-item">Torre Enfriamiento HPDC</li>
+                    <li class="list-group-item">RoboVent</li>
+                    <li class="list-group-item">Subestacion Magna</li>
+                  </ul>
+            </div>
+          </div>
+            <ul class="list-group">
+                <li class="list-group-item m-0 ps-1">
+                  <img class="offcanvas__icon" src="./assets/icons/chart-line-solid.svg" alt="">
+                  <a href="">Graficas en tiempo real</a>
+                </li>
+                <li class="list-group-item m-0 ps-1">
+                  <img class="offcanvas__icon" src="./assets/icons/gears-solid.svg" alt="">
+                  <a href="">Configuración</a>
+                </li>
+                <li class="list-group-item m-0 ps-1">
+                  <img class="offcanvas__icon" src="./assets/icons/sheet-plastic-solid.svg" alt="">
+                  <a href="">Generar reporte</a>
+                </li>
+              </ul>
+
+              <p>
+                <button class="btn offcanvas__generic-button d-inline-flex justify-content-start " type="button" data-bs-toggle="collapse" data-bs-target="#collapseReports" aria-expanded="false" aria-controls="collapseReports">
+                  <div class="d-inline-flex justify-content-start">
+                    <img class="offcanvas__icon" src="./assets/icons/box-archive-solid.svg" alt="">
+                    <div>Reportes guardados</div>
+                </div>
+                </button>
+              </p>
+              <div class="collapse" id="collapseReports">
+                <div class="card card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="">Reporte presiones 28/02/22</a></li>
+                        <li class="list-group-item"><a href="">Reporte alarmas 15/03/22</a></li>
+                        <li class="list-group-item"><a href="">Reporte estadistico 02/05/22</a></li>
+                      </ul>
+                </div>
+              </div>
+        </div>
+      </div>
+
+    <nav>
+        <div class="px-3 py-2 bg-dark text-white">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img src="/assets/icons/hambuerger.svg" alt=""></button>
+                <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                  <img src="./assets/icons/visormapx.svg" width="200rem" alt="">
+                </a>
+                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                  <li>
+                    <a href="./index.html" class="nav-link text-secondary">
+                        <img src="./assets/icons/home.svg" class="bi d-block mx-auto mb-1" alt="">
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <img src="./assets/icons/dashboard.svg" class="bi d-block mx-auto mb-1" alt="">
+                      Dashboard
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <img src="./assets/icons/calendar.svg" class="bi d-block mx-auto mb-1" alt="">
+                      Calendario
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <img src="./assets/icons/apps.svg" class="bi d-block mx-auto mb-1" alt="">
+                      Apps
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <img src="./assets/icons/bell-solid.svg" class="bi d-block mx-auto mb-1" width="22px" alt="">
+                      Notificaciones
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <img src="./assets/icons/user.svg" class="bi d-block mx-auto mb-1" alt="">
+                      Usuario
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </nav>
+
+    <main>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-responsive table-hover">
+                        <thead>
+                            <tr data-toggle="collapse" id="row1" data-target=".row1">
+                                <th>
+                                    Seleccionar
+                                </th>
+                                <th>
+                                    Tarjeta
+                                </th>
+                                <th>
+                                    Monitoreo
+                                </th>
+                                <th>
+                                    Status
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-active clickable " data-toggle="collapse" id="row2" data-target=".row2">
+                                <td>  
+                                    <input type="checkbox" name="vehicle1" value="Bike">
+                                </td>
+                                <td>
+                                    Presión a cliente
+                                </td>
+                                <td>
+                                    01/04/2022
+                                </td>
+                                <td>
+                                    OK
+                                </td>
+                            </tr>
+                            <tr class="table-success">
+                                <td>
+                                    <input type="checkbox" name="vehicle1" value="Bike">
+                                </td>
+                                <td>
+                                    Presión a proceso
+                                </td>
+                                <td>
+                                    02/04/2022
+                                </td>
+                                <td>
+                                    OK
+                                </td>
+                            </tr>
+                            <tr class="table-warning">
+                                <td>
+                                    <input type="checkbox" name="vehicle1" value="Bike">
+                                </td>
+                                <td>
+                                    Presión Nitrogeno a cliente
+                                </td>
+                                <td>
+                                    03/04/2022
+                                </td>
+                                <td>
+                                    Tendencia a falla
+                                </td>
+                            </tr>
+                            <tr class="table-danger">
+                                <td>
+                                    <input type="checkbox" name="vehicle1" value="Bike">
+                                </td>
+                                <td>
+                                    Presion de Nitrogeo a proceso
+                                </td>
+                                <td>
+                                    04/04/2022
+                                </td>
+                                <td>
+                                    Alarma activa
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-sm-12">
+
+                    <div class="card text-center">
+                        <div class="card-header">
+                          Presión a cliente
+                        </div>
+                        <div class="card-body">
+                            <table class="charts-css line" id="my-chart">
+
+                                <tbody>
+                                  <tr>
+                                    <td style="--start: 0.0; --size: 0.4"> <span class="data"> 15.54 </span> </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="--start: 0.4; --size: 0.2"> <span class="data"> 14.52 </span> </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="--start: 0.2; --size: 0.6"> <span class="data"> 17.24 </span> </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="--start: 0.6; --size: 0.4"> <span class="data"> 16.25 </span> </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="--start: 0.4; --size: 0.8"> <span class="data"> 18.52 </span> </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="--start: 0.8; --size: 0.6"> <span class="data"> 17.77 </span> </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="--start: 0.6; --size: 1.0"> <span class="data"> 19.25 </span> </td>
+                                  </tr>
+                                </tbody>
+                              
+                              </table>
+                        </div>
+                        <div class="card-footer text-muted">
+                          Velocidad de muestreo: 30s
+                        </div>
+                      </div>
+
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card card__size">
+                        <div class="card-body">
+                          <h5 class="card-title">Información: <b>Bloque 10:00-10:30</b></h5>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Presión actual: <b>19.25</b> </li>
+                            <li class="list-group-item">Presión máxima promedio: <b>17.25</b></li>
+                            <li class="list-group-item">Presión promedio: <b>15.52</b></li>
+                            <li class="list-group-item">Presión mínima promedio: <b>14.78</b></li>
+                            <li class="list-group-item">Última alarma: <b>1d 2h 38m 30s</b></li>
+                          </ul>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-8 col-sm-12">
+
+                    <div class="card text-center">
+                        <div class="card-header">
+                          Presión a proceso
+                        </div>
+                        <div class="card-body">
+                            <table class="charts-css line reverse" id="my-chart">
+
+                                <tbody>
+                                  <tr>
+                                    <td style="--start: 0.0; --size: 0.4"> <span class="data"> 17.51 </span> </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="--start: 0.4; --size: 0.2"> <span class="data"> 18.51 </span> </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="--start: 0.2; --size: 0.6"> <span class="data"> 16.99 </span> </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="--start: 0.6; --size: 0.4"> <span class="data"> 17.25 </span> </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="--start: 0.4; --size: 0.8"> <span class="data"> 15.11 </span> </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="--start: 0.8; --size: 0.6"> <span class="data"> 17.21 </span> </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="--start: 0.6; --size: 1.0"> <span class="data"> 14.37 </span> </td>
+                                  </tr>
+                                </tbody>
+                              
+                              </table>
+                        </div>
+                        <div class="card-footer text-muted">
+                          Velocidad de muestreo: 30s
+                        </div>
+                      </div>
+
+
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card card__size">
+                        <div class="card-body">
+                          <h5 class="card-title">Información: <b>Bloque 10:00-10:30</b></h5>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Presión actual: <b>15.31</b> </li>
+                            <li class="list-group-item">Presión máxima promedio: <b>18.71</b></li>
+                            <li class="list-group-item">Presión promedio: <b>15.11</b></li>
+                            <li class="list-group-item">Presión mínima promedio: <b>13.87</b></li>
+                            <li class="list-group-item">Última alarma: <b>4d 14h 10m 00s</b></li>
+                          </ul>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script> 
+</body>
+</html>
